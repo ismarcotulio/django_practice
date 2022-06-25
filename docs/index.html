@@ -23,7 +23,7 @@ description: "Proyecto de Canjes para Marcas Propias"
         </div>
     </a>
     <p class="post-meta">
-        Publicado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        Publicado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} el {{ post.date | date: "%m/%-d/%Y" }}
     </p>
 </div>
 <hr>
