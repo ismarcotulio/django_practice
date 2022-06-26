@@ -1,0 +1,9 @@
+I"Š<style>
+    .pantalla {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+</style>
+:ET

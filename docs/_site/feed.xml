@@ -5,18 +5,18 @@
     <description>关于程序与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
     <link>http://localhost:4000/django_practice/</link>
     <atom:link href="http://localhost:4000/django_practice/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 25 Jun 2022 09:30:13 -0500</pubDate>
-    <lastBuildDate>Sat, 25 Jun 2022 09:30:13 -0500</lastBuildDate>
+    <pubDate>Sat, 25 Jun 2022 20:07:43 -0500</pubDate>
+    <lastBuildDate>Sat, 25 Jun 2022 20:07:43 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
-        <title>Pantallas y flujo de desarrollo</title>
+        <title>PROYECTO AUTOMATIZACIÓN DE CANJES PARA MARCAS PROPIAS</title>
         <description>&lt;style&gt;
     .pantalla {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
+        width: 80%;
     }
 
     p{
@@ -26,141 +26,171 @@
 
 &lt;p&gt;El presente documento tiene por finalidad mostrar el diagrama de flujo de proceso y diseño de la aplicación web para la plataforma de Automatización de Canjes de Marcas Propias (Swissfarm-Vitotal) para que los clientes registrados al mismo tengan el beneficio de canjes con los laboratorios, para ello se adjunta las imágenes de cada pantalla del proceso y una breve explicación de las mismas.&lt;/p&gt;
 
-&lt;h2 id=&quot;pantallas-de-usuario&quot;&gt;Pantallas de Usuario&lt;/h2&gt;
+&lt;h2 id=&quot;diagrama-de-flujo-principal&quot;&gt;DIAGRAMA DE FLUJO PRINCIPAL&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.1.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;plataforma-cadena---administracion&quot;&gt;PLATAFORMA CADENA - ADMINISTRACION&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.2.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;proceso-de-pedidos-rechazados&quot;&gt;Proceso de pedidos rechazados&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.3.png&quot; class=&quot;proceso&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;plataforma-cadena---punto-de-venta&quot;&gt;PLATAFORMA CADENA - PUNTO DE VENTA&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.4.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;proceso-de-emision-de-boleta&quot;&gt;Proceso de Emision de Boleta&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.5.png&quot; class=&quot;proceso&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;proceso-de-registro-de-canje&quot;&gt;Proceso de Registro de Canje&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.6.png&quot; class=&quot;proceso&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;proceso-de-registro-de-compra&quot;&gt;Proceso de Registro de Compra&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.7.png&quot; class=&quot;proceso&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;proceso-de-reversion-de-compra&quot;&gt;Proceso de Reversion de Compra&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.8.png&quot; class=&quot;proceso&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;plataforma-del-distribuidor&quot;&gt;PLATAFORMA DEL DISTRIBUIDOR&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.9.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;plataforma-del-laboratorio&quot;&gt;PLATAFORMA DEL LABORATORIO&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.10.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;pantallas-de-usuario&quot;&gt;PANTALLAS DE USUARIO&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-inicio-de-sesion&quot;&gt;1. Inicio de sesion.&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/38.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.11.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;2-recuperar-contraseña&quot;&gt;2. Recuperar contraseña.&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/39.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.12.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;3-menu&quot;&gt;3. Menu.&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/40.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.13.jpg&quot; class=&quot;pantalla&quot; /&gt;
+&lt;b&gt;Nota&lt;/b&gt;: El menú puede variar de acuerdo al perfil del usuario.&lt;/p&gt;
 
-&lt;h2 id=&quot;pantallas-para-la-administracion-de-puntos-de-venta&quot;&gt;Pantallas para la administracion de Puntos de Venta&lt;/h2&gt;
+&lt;h2 id=&quot;pantallas-para-la-administración-de-puntos-de-venta&quot;&gt;PANTALLAS PARA LA ADMINISTRACIÓN DE PUNTOS DE VENTA&lt;/h2&gt;
 &lt;h3 id=&quot;1-registro-de-compras&quot;&gt;1. Registro de Compras.&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: Esta pantalla se utilizará para realizar el registro de la compra cuando el cliente se presente al punto de venta con la factura en mano. La factura se le mostrará al personal de punto de venta, este a su vez le solicitará al cliente su número de identidad, el cual se deberá introducir en el campo de identificación. Luego al presionar enter desplegará la información del nombre del cliente registrado y desbloqueará los controles de boleta, en caso contrario, desplegará un mensaje que le indicará al operador que tiene que registrar al cliente y en ese caso pasará a una pantalla de registro. Si todo se ha hecho de la manera correcta, se prodecerá a cargar la imagen de la factura. En este caso el documento de la factura se puede escanear o adjuntar manualmente.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.14.jpg&quot; class=&quot;pantalla&quot; /&gt;
+&lt;b&gt;Funcionalidad&lt;/b&gt;: Esta pantalla se utilizará para realizar el registro de la compra cuando el cliente se presente al punto de venta con la factura en mano. La factura se le mostrará al personal de punto de venta, este a su vez le solicitará al cliente su número de identidad, el cual se deberá introducir en el campo de identificación. Luego al presionar enter desplegará la información del nombre del cliente registrado y desbloquear los controles de boleta, en caso contrario, desplegará un mensaje que le indicará al operador que tiene que registrar al cliente y en ese caso pasará a una pantalla de registro. Si todo se ha hecho de la manera correcta, se procederá a cargar la imagen de la factura. En este caso el documento de la factura se puede escanear o adjuntar manualmente.&lt;/p&gt;
+
 &lt;p&gt;Una vez que se carga el documento de factura, el personal del punto de venta hará una búsqueda de los productos relacionados a esa factura, donde se desplegará una pantalla emergente en el cual se hará una búsqueda y selección de los medicamentos de acuerdo a la factura. Estos medicamentos se deberán ir agregando a una lista final de los productos relacionados a la compra.&lt;/p&gt;
-&lt;p&gt;Una vez que esten cargados los medicamentos a la lista final, la pantalla tendrá una opción que permitira emitir el número de boleta para ese medicamento si el cliente tiene canjes activos. Por último, se procede a realizar la compra la cual tendrá relacionado los números de boleta emitidos.&lt;/p&gt;
-&lt;p&gt;No obstante también se puede emitir una boleta para un medicamento desde la pantalla &lt;strong&gt;Emitir Boleta&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Una vez que estén cargados los medicamentos a la lista final, la pantalla tendrá una opción que permitirá emitir el número de boleta para ese medicamento si el cliente tiene canjes activos. Por último, se procede a realizar la compra la cual tendrá relacionado los números de boleta emitidos.&lt;/p&gt;
+
+&lt;p&gt;No obstante, también se puede emitir una boleta para un medicamento desde la pantalla &lt;b&gt;Emitir Boleta&lt;/b&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;2-registro-de-canjes&quot;&gt;2. Registro de Canjes.&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/2.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta parte del proceso se le solicitará al cliente su número de identidad, esto para hacer la búsqueda y verificar si esta registrado en la plataforma de Canjes y Marcas Propias. Una vez verificada la información se hará una búsqueda de los medicamentos que el cliente tiene disponible para el canje. Teniendo la información verificada se llenará una lista de los medicamentos que tienen disponibilidad de canje. Esta lista posee un apartado de información en el cual desplegará una lista detallada de la boleta a la que pertenece ese medicamento disponible para canje y su estado. Si el estado del canje esta en espera entonces se procederá a añadir a la segunda lista de confirmación de medicamento para ser canjeado. &lt;/p&gt;
-&lt;p&gt;Por último se procederá a realizar el registro del canje el cual emitirá un documento donde estaran registrados todas las boletas pertenecientes a ese canje.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.15.jpg&quot; class=&quot;pantalla&quot; /&gt;
+&lt;b&gt;Funcionalidad&lt;/b&gt;: En esta parte del proceso se le solicitará al cliente su número de identidad, esto para hacer la búsqueda y verificar si está registrado en la plataforma de Canjes Marcas Propias. Una vez verificada la información se hará una búsqueda de los medicamentos que el cliente tiene disponible para el canje. Teniendo la información verificada se llenará una lista de los medicamentos que tienen disponibilidad de canje. Esta lista posee un apartado de información en el cual desplegará una lista detallada de la boleta a la que pertenece ese medicamento disponible para canje y su estado. Si el estado del canje está en espera entonces se procederá a añadir a la segunda lista de confirmación de medicamento para ser canjeado.&lt;/p&gt;
+
+&lt;p&gt;Por último, se procederá a realizar el registro del canje el cual emitirá un documento donde estarán registrados todas las boletas pertenecientes a ese canje.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Modal de busqueda de medicamento.&lt;br /&gt;
-    &lt;img src=&quot;/django_practice/img/3.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+    &lt;img src=&quot;/django_practice/img/1.16.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Detalles de la boleta.
-    &lt;img src=&quot;/django_practice/img/4.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+    &lt;img src=&quot;/django_practice/img/1.17.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;3-registro-de-pacientes&quot;&gt;3. Registro de Pacientes.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/5.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.18.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los pacientes que no se encuentren en la plataforma de Canjes y Marcas propias. Si no existen, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Funcionalidad&lt;/b&gt;: En esta pantalla se hará el registro de los pacientes que no se encuentren en la plataforma de Canjes y Marcas propias. Si no existen, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;4-registro-de-pariente&quot;&gt;4. Registro de Pariente.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/6.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.19.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los parientes que no se encuentren en la plataforma de Canjes y Marcas propias. Si no existen, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Funcionalidad&lt;/b&gt;: En esta pantalla se hará el registro de los parientes que no se encuentren en la plataforma de Canjes Marcas propias. Si no existen, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;5-registro-de-parentesco&quot;&gt;5. Registro de Parentesco.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/7.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.20.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;:  En esta pantalla se hará el registro del parentesco que no se encuentre en la plataforma de Canjes y Marcas propias. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Funcionalidad&lt;/b&gt;: En esta pantalla se hará el registro del parentesco que no se encuentre en la plataforma de Canjes Marcas propias. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;6-emision-de-boleta&quot;&gt;6. Emision de boleta.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/8.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.21.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: Se le solicitará el número de la identidad al cliente para verificar si se encuentra en la plataforma de Canjes y Marcas Propias se hace una búsqueda por los medicamentos para saber si tiene la disponibilidad de canje y una vez hecha la verificación se procede a emitir una boleta.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Funcionalidad&lt;/b&gt;: Se le solicitará el número de la identidad al cliente para verificar si se encuentra en la plataforma de Canjes de Marcas Propias se hace una búsqueda por los medicamentos para saber si tiene la disponibilidad de canje y una vez hecha la verificación se procede a emitir una boleta.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Plantilla boleta.
-    &lt;img src=&quot;/django_practice/img/9.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
+    &lt;img src=&quot;/django_practice/img/1.22.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;7-reversion-de-compra&quot;&gt;7. Reversion de compra.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/10.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.23.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: Se deberá verificar que no exista una boleta relacionada a la compra. Si la relación no existe  se podra reversar la compra por medio de su respectivo número de compra. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Funcionalidad&lt;/b&gt;: Se deberá verificar que no exista una boleta relacionada a la compra. Si la relación no existe se podra reversar la compra por medio de su respectivo número de compra.&lt;/p&gt;
+
 &lt;p&gt;Al ingresar el número de compra se mostrará la información relacionada a ella.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Busqueda de compra.
-   &lt;img src=&quot;/django_practice/img/11.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
+   &lt;img src=&quot;/django_practice/img/1.24.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;8-registrar-medico&quot;&gt;8. Registrar medico.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/15.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.25.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt; &lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro del médico que no se encuentre en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Seleccionar especialidad.
-   &lt;img src=&quot;/django_practice/img/16.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla el usuario puede filtrar y seleccionar la especialidad deseada para agregarla en la pantalla  de &lt;strong&gt;Registrar Médico&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Funcionalidad&lt;/b&gt;: En esta pantalla se hará el registro del médico que no se encuentre en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento. Se puede seleccionar varias especialidades para el médico.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Registrar especialidad.
-   &lt;img src=&quot;/django_practice/img/17.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
+   &lt;img src=&quot;/django_practice/img/1.26.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt; &lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de las especialidades medicas que no se encuentren en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Funcionalidad&lt;/b&gt;: En esta pantalla se hará el registro de las especialidades médicas que no se encuentren en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;9-re-impresion-de-boleta&quot;&gt;9. Re-impresion de boleta.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/27.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.27.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: Esta pantalla será usada para re-imprimir la boleta en caso de que el cliente extravié la boleta fisica. Se le solicitará al cliente que proporcione su número de identidad para buscar las boletas que tiene disponible, el orden en el que se mostraran será de forma ascendente según la fecha, luego se procederá a re-imprimir la boleta con una marca de agua de re-impresion.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Funcionalidad&lt;/b&gt;: Esta pantalla será usada para imprimir la boleta en caso de que el cliente extravíe la boleta física. Se le solicitará al cliente que proporcione su número de identidad para buscar las boletas que tiene disponible, el orden en el que se mostraran será de forma ascendente según la fecha, luego se procederá a imprimir la boleta con una marca de agua de reimpresión.&lt;/p&gt;
 
 &lt;h3 id=&quot;10-paciente-programa&quot;&gt;10. Paciente programa.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/49.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.28.jpg&quot; class=&quot;pantalla&quot; /&gt;
+&lt;b&gt;Funcionalidad&lt;/b&gt;: En esta pantalla se realiza el registro del paciente a un programa en específico, en el cual tendremos la información de la receta y los medicamentos disponibles según el plan de registro.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Receta.
-    &lt;img src=&quot;/django_practice/img/50.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
+    &lt;img src=&quot;/django_practice/img/1.29.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;pantallas-para-la-administracion-de-cadenas&quot;&gt;Pantallas para la administracion de Cadenas.&lt;/h2&gt;
+&lt;h2 id=&quot;pantallas-para-la-administración-de-cadenas&quot;&gt;PANTALLAS PARA LA ADMINISTRACIÓN DE CADENAS.&lt;/h2&gt;
 &lt;h3 id=&quot;1-pedidos-rechazados-de-cadena&quot;&gt;1. Pedidos rechazados de Cadena.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/12.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.30.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En este punto del proceso, el personal del punto de venta verificará la lista de los medicamentos que se le han rechazado su canje y se realizará una búsqueda mediante una fecha de incio y fecha final relacionada al distribuidor del medicamento, el resultado será el detalle del medicamento, la cantidad solicitada, el número de canje y el detalle por el cual fue rechazado ese número de canje. Una vez verificado esto se generará un pedido de reembolso del punto de venta.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Funcionalidad&lt;/b&gt;: En este punto del proceso, el personal del punto de venta verificará la lista de los medicamentos que se le han rechazado su canje y se realizará una búsqueda mediante una fecha de inicio y fecha final relacionada al distribuidor del medicamento, el resultado será el detalle del medicamento, la cantidad solicitada, el número de canje y el detalle por el cual fue rechazado ese número de canje. Una vez verificado esto se generará un pedido de reembolso del punto de venta.&lt;/p&gt;
 
 &lt;h3 id=&quot;2-configuracion-de-solicitudes-de-reembolso-en-cadena&quot;&gt;2. Configuracion de solicitudes de reembolso en Cadena.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/47.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.31.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: Es una pantalla de configuración donde se parametrizará los valores para generar las solicitudes de reembolso de una manera automatica.&lt;/p&gt;
 
-&lt;h2 id=&quot;pantallas-para-la-administracion-de-distribuidores&quot;&gt;Pantallas para la administracion de Distribuidores.&lt;/h2&gt;
+&lt;h2 id=&quot;pantallas-para-la-administración-de-distribuidores&quot;&gt;PANTALLAS PARA LA ADMINISTRACIÓN DE DISTRIBUIDORES.&lt;/h2&gt;
+
 &lt;h3 id=&quot;1-configuracion-de-solicitudes-de-reembolso-en-distribuidores&quot;&gt;1. Configuracion de solicitudes de reembolso en Distribuidores.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/48.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.32.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: Es una pantalla de configuración donde se parametrizará los valores para generar las solicitudes de reembolso de una manera automatica.&lt;/p&gt;
 
 &lt;h3 id=&quot;2-aplicar-reembolso&quot;&gt;2. Aplicar reembolso.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/26.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.33.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;:En esta pantalla el  distribuidor procedera a filtrar la información de las solicitudes a nivel de los puntos de venta de la siguiente forma:&lt;/p&gt;
 
@@ -173,52 +203,53 @@
 
 &lt;h3 id=&quot;3-rechazar-solicitud-de-reembolso&quot;&gt;3. Rechazar Solicitud de reembolso.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/13.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.34.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta parte del proceso la persona encargada por parte del distribuidor, rechaza la solicitud de reembolso generada por la cadena referente a un punto de venta. &lt;/p&gt;
 &lt;p&gt;Este rechazo puede ser de dos formas: parcial o total por las unidades solicitadas. Una vez que el usuario tenga preparado los medicamentos que rechazará se procederá a darle al botón de confirmar, el cual verificará línea por línea si la columna de cantidad rechazada tiene un valor digitado.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Modal cantidad de rechazo.
-   &lt;img src=&quot;/django_practice/img/14.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
+   &lt;img src=&quot;/django_practice/img/1.35.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: Es una pantalla donde se mostrará un espacio, en el cual el usuario podrá digitar la cantidad del producto a rechazar.&lt;/p&gt;
 
 &lt;h3 id=&quot;4-registro-de-medicamento-por-distribuidor&quot;&gt;4. Registro de medicamento por distribuidor.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/28.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.36.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: Se tomará la data maestra de medicamentos para asociar los productos que manejará el distribuidor.&lt;/p&gt;
 
-&lt;h2 id=&quot;pantallas-para-la-admnistracion-de-laboratorios&quot;&gt;Pantallas para la admnistracion de Laboratorios.&lt;/h2&gt;
+&lt;h2 id=&quot;pantallas-para-la-administración-de-laboratorios&quot;&gt;PANTALLAS PARA LA ADMINISTRACIÓN DE LABORATORIOS.&lt;/h2&gt;
+
 &lt;h3 id=&quot;1-registrar-cadena&quot;&gt;1. Registrar cadena.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/18.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.37.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de la cadena que no se encuentre registrada en la plataforma,se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada y modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Seleccionar pais cadena.
-&lt;img src=&quot;/django_practice/img/19.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;/django_practice/img/1.38.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla el usuario puede filtrar y seleccionar el país en donde se encuentra la cadena deseada para agregar en la pantalla  de &lt;strong&gt;Registrar Cadena&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;2-registrar-punto-de-venta&quot;&gt;2. Registrar punto de venta.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/20.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.39.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt; &lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los puntos de venta que no se encuentren registrados en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Seleccion de cadena para registrar punto de venta.
-    &lt;img src=&quot;/django_practice/img/21.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+    &lt;img src=&quot;/django_practice/img/1.40.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Seleccion de pais para registrar punto de venta.
-&lt;img src=&quot;/django_practice/img/22.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/django_practice/img/1.41.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -226,111 +257,115 @@
 
 &lt;h3 id=&quot;3-registrar-pais&quot;&gt;3. Registrar pais.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/23.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.42.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro del pais que no se encuentre en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;4-registrar-region&quot;&gt;4. Registrar region.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/24.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.43.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de la region que no se encuentre en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;5-tipo-de-contacto&quot;&gt;5. Tipo de contacto.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/25.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.44.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla el usuario puede agregar o modificar los tipos de contactos.&lt;/p&gt;
 
 &lt;h3 id=&quot;6-registro-de-medicamento-por-laboratorio&quot;&gt;6. Registro de medicamento por laboratorio.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/29.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.45.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Funcionalidad: Se tomará la data maestra de medicamentos para asociar los productos que manejara el laboratorio.&lt;/p&gt;
 
 &lt;h3 id=&quot;7-registrar-genero&quot;&gt;7. Registrar genero.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/30.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.46.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los generos que no se encuentren en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;8-registrar-tipo-de-identificacion&quot;&gt;8. Registrar tipo de identificacion.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/31.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.47.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los tipos de identificacion que no se encuentre en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;9-registrar-usuario&quot;&gt;9. Registrar Usuario.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/32.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.48.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los usuarios. Se procede a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante dicha pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;10-registrar-laboratorio&quot;&gt;10. Registrar laboratorio.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/33.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.49.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los laboratorios que no se encuentren en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;11-registrar-distribuidor&quot;&gt;11. Registrar distribuidor.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/34.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.50.jpg&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los distribuidores que no se encuentren en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;12-registrar-programa&quot;&gt;12. Registrar programa.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/35.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.51.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los programas que no se encuentre en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;h3 id=&quot;13-registrar-medicamentos&quot;&gt;13. Registrar medicamentos.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/36.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.52.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los medicamentos que no se encuentre en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Busqueda de medicamentos.
-&lt;img src=&quot;/django_practice/img/37.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/django_practice/img/1.53.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Listado de medicamentos.
-&lt;img src=&quot;/django_practice/img/41.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/django_practice/img/1.54.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;14-configuracion-del-laboratorio&quot;&gt;14. Configuracion del laboratorio.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/42.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.55.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;15-configuracion-notificaciones&quot;&gt;15. Configuracion notificaciones.&lt;/h3&gt;
+&lt;h3 id=&quot;15-rechazar-solicitud-de-reembolso&quot;&gt;15. Rechazar solicitud de reembolso.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/43.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.56.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;16-registrar-escala&quot;&gt;16. Registrar escala.&lt;/h3&gt;
+&lt;h3 id=&quot;16-aplicar-pedido&quot;&gt;16. Aplicar pedido.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/44.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.57.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;17-registrar-escala&quot;&gt;17. Registrar escala.&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.58.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de las escalas. Para ello se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
-&lt;h3 id=&quot;17-registrar-tipo-solicitud&quot;&gt;17. Registrar tipo solicitud.&lt;/h3&gt;
+&lt;h3 id=&quot;18-registrar-tipo-solicitud&quot;&gt;18. Registrar tipo solicitud.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/45.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.59.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los tipos de solicitudes que no se encuentren en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
-&lt;h3 id=&quot;18-registrar-tipo-recurrencia&quot;&gt;18. Registrar tipo recurrencia.&lt;/h3&gt;
+&lt;h3 id=&quot;19-registrar-tipo-recurrencia&quot;&gt;19. Registrar tipo recurrencia.&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/django_practice/img/46.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/django_practice/img/1.60.png&quot; class=&quot;pantalla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidad&lt;/strong&gt;: En esta pantalla se hará el registro de los tipos de recurrencia que no se encuentren en la plataforma. Si no existe, se procederá a registrar llenando el siguiente formulario, en el cual la información puede ser agregada o modificada mediante la presente pantalla de mantenimiento.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 24 Jun 2022 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/django_practice/2022/06/24/pantallas/</link>
-        <guid isPermaLink="true">http://localhost:4000/django_practice/2022/06/24/pantallas/</guid>
+        <link>http://localhost:4000/django_practice/2022/06/24/presentacion/</link>
+        <guid isPermaLink="true">http://localhost:4000/django_practice/2022/06/24/presentacion/</guid>
         
         <category>mockups</category>
         
