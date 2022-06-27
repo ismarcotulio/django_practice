@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "PLANIFICACION - CREACION DE MODELOS EN BACKEND",
+      "subtitle" : "Division de tareas",
+      "tags"     : "modelos, backend",
+      "url"      : "/django_practice/2022/06/27/plan-modelos/",
+      "date"     : "2022-06-27 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "DESPLIEGUE DE APLICACIONES BACKEND",
+      "subtitle" : "En servidor local, QA y Produccion",
+      "tags"     : "despliegue, backend",
+      "url"      : "/django_practice/2022/06/27/desplegue-backend/",
+      "date"     : "2022-06-27 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "MODELADO ENTIDAD RELACION",
       "subtitle" : "Diagramas de clases UML",
       "tags"     : "uml, diagramas, analisis, diseño",

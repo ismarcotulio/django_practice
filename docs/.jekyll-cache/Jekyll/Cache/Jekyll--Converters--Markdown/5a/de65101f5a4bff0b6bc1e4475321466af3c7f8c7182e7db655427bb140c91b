@@ -1,0 +1,73 @@
+I"º<style>
+    .pantalla {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    p{
+        text-align: justify;
+    }
+</style>
+
+<p>El siguiente documento contiene la planificacion sobre el orden de creacion de cada modelo  que representa a las tablas en el dise√±o de base de datos..</p>
+
+<h2 id="modelos-del-modulo-cadena---punto-de-venta">Modelos del modulo Cadena - Punto de Venta</h2>
+<ol>
+  <li>Persona.</li>
+  <li>Paciente.</li>
+  <li>Familiar dependiente.</li>
+  <li>Encabezado Paciente Programa.</li>
+  <li>Detalle Paciente Programa.</li>
+  <li>Receta.</li>
+  <li>Programa Respuesta.</li>
+  <li>Inscripcion respuesta.</li>
+  <li>Detalle Compras</li>
+  <li>Encabezado compras.</li>
+  <li>Detalle Boleta.</li>
+  <li>Encabezado Boleta.</li>
+  <li>Estado Boleta.</li>
+  <li>Detalle Canjes.</li>
+  <li>Encabezado Canjes.</li>
+  <li>Estado Canje.</li>
+</ol>
+
+<h2 id="modelos-del-modulo-cadena---administracion">Modelos del modulo Cadena - Administracion</h2>
+<ol>
+  <li>Detalle Cadena Configuracion Pedido.</li>
+  <li>Encabezado Cadena Configuracion Pedido.</li>
+  <li>Tipo de Solicitud.</li>
+  <li>Tipo de Recurrencia.</li>
+</ol>
+
+<h2 id="modelos-del-mmodulo-distribuidor">Modelos del mmodulo Distribuidor</h2>
+<ol>
+  <li>Detalle Distribuidor Configuracion Pedido.</li>
+  <li>Encabezado Distribuidor Configuracion Pedido.</li>
+</ol>
+
+<h2 id="modelos-del-modulo-laboratorio">Modelos del modulo Laboratorio</h2>
+<ol>
+  <li>Region.</li>
+  <li>Pais.</li>
+  <li>Modo contacto.</li>
+  <li>Genero.</li>
+  <li>Parentezco.</li>
+  <li>Programa.</li>
+  <li>Medico</li>
+  <li>Especialidad.</li>
+  <li>Medicamentos.</li>
+  <li>Escala de canjes.</li>
+  <li>Laboratorio.</li>
+  <li>Punto de venta.</li>
+  <li>Cadena.</li>
+  <li>Usuarios.</li>
+  <li>Perfil.</li>
+  <li>Usuario x Perfil x Cadena x POS.</li>
+  <li>Usuario x Perfil x Cadena.</li>
+  <li>Usuario x Perfil x Laboratorio.</li>
+  <li>Usuario x Perfil x Distribuidor.</li>
+</ol>
+
+:ET
