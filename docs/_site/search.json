@@ -1,8 +1,16 @@
 [
   
     {
-      "title"    : "PROYECTO AUTOMATIZACIÓN DE CANJES PARA MARCAS PROPIAS",
-      "subtitle" : "Presentacion de flujo y diseño de pantallas",
+      "title"    : "MODELADO ENTIDAD RELACION",
+      "subtitle" : "Diagramas de clases UML",
+      "tags"     : "uml, diagramas, analisis, diseño",
+      "url"      : "/django_practice/2022/06/26/modelado/",
+      "date"     : "2022-06-26 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "PRESENTACION DE PROYECTO CMP",
+      "subtitle" : "Flujo y diseño de pantallas",
       "tags"     : "mockups, diagramas, diseño",
       "url"      : "/django_practice/2022/06/24/presentacion/",
       "date"     : "2022-06-24 00:00:00 -0500"

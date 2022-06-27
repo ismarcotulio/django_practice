@@ -1,0 +1,19 @@
+I"�<style>
+    .pantalla {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    p{
+        text-align: justify;
+    }
+</style>
+
+<p>El presente documento tiene por finalidad mostrar el diagrama de flujo de proceso y diseño de la aplicación web para la plataforma de Automatización de Canjes de Marcas Propias (Swissfarm-Vitotal) para que los clientes registrados al mismo tengan el beneficio de canjes con los laboratorios, para ello se adjunta las imágenes de cada pantalla del proceso y una breve explicación de las mismas.</p>
+
+<h2 id="direccion-de-personas">DIRECCION DE PERSONAS</h2>
+<p><img src="/django_practice/img/2.2.png" class="pantalla" /></p>
+
+:ET

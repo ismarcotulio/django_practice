@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "PROYECTO AUTOMATIZACIÓN DE CANJES PARA MARCAS PROPIAS"
-subtitle: 'Presentacion de flujo y diseño de pantallas'
+title: "PRESENTACION DE PROYECTO CMP"
+subtitle: 'Flujo y diseño de pantallas'
 author: "Paola Molina, Joaquin valladares, Genesis Aceituno y Marco Tulio Ruiz"
 header-style: text
 tags:

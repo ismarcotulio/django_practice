@@ -1,0 +1,73 @@
+I"â<style>
+    .pantalla {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    p{
+        text-align: justify;
+    }
+</style>
+
+<p>El siguiente documento contiene un conjunto de modelos Entidad Relacion que describen el funcionamiento del sistema de Base de Datos para el Proyecto de Canjes y Marcas Propias. Para este modelado se utilizaron las notaciones y reglas correspondientes al estandar de modelado UML, dando como resultado un Diagrama de Clases.</p>
+
+<p><b>Notas</b>:</p>
+<ol>
+  <li>Leer cada flujo de derecha a izquierda o de arriba hacia abajo.</li>
+  <li>Los flujos que conectan las tablas son de tipo asociativo.</li>
+  <li>Las relaciones son dadas por etiquetas las cuales indican particiopacion. Por ejemplo 1..* se lee un minimo de 1 y un maximo de *.</li>
+  <li>El simbolo * indica participaciones ilimitadas.</li>
+  <li>Como ejemplo, en el primer diagrama, la relacion entre la tabla PACIENTE y la tabla PAIS esta dada por la notacion:  1..*  PERTENECEN A 1..1. Esto se lle de la siguiente forma: Cada minimo de 1 o maximo de muchos PACIENTES -PERTENECEN almenos a un minimo de 1 o maximo de 1 PAIS.</li>
+</ol>
+
+<p><b>Referencia</b>:
+Elmasri, Fundamentals of Database Systems 7ma edicion, Capitulo 3, Modelado de datos utilizando modelos Entidad Relacion, Seccion 3.8 Diagramas de clases UML, Pag 86.</p>
+
+<h2 id="1-direccion-de-personas">1. DIRECCION DE PERSONAS</h2>
+<p><img src="/django_practice/img/2.2.png" class="pantalla" /></p>
+
+<h2 id="2-registro-de-pacientes">2. REGISTRO DE PACIENTES</h2>
+<p><img src="/django_practice/img/2.3.png" class="pantalla" /></p>
+
+<h2 id="3-registro-de-programa">3. REGISTRO DE PROGRAMA</h2>
+<p><img src="/django_practice/img/2.4.png" class="pantalla" /></p>
+
+<h2 id="4-registro-factura-de-compra">4. REGISTRO FACTURA DE COMPRA</h2>
+<p><img src="/django_practice/img/2.5.png" class="pantalla" /></p>
+
+<h2 id="5-registro-de-boleta">5. REGISTRO DE BOLETA</h2>
+<p><img src="/django_practice/img/2.6.png" class="pantalla" /></p>
+
+<h2 id="6-ingreso-de-canjes">6. INGRESO DE CANJES</h2>
+<p><img src="/django_practice/img/2.7.png" class="pantalla" /></p>
+
+<h2 id="7-roles-de-usuario">7. ROLES DE USUARIO</h2>
+<p><img src="/django_practice/img/2.8.png" class="pantalla" /></p>
+
+<p><img src="/django_practice/img/2.9.png" class="pantalla" /></p>
+
+<p><img src="/django_practice/img/2.10.png" class="pantalla" /></p>
+
+<p><img src="/django_practice/img/2.11.png" class="pantalla" /></p>
+
+<h2 id="11-configuracion-de-pedido-cadena---distribuidor">11. CONFIGURACION DE PEDIDO CADENA - DISTRIBUIDOR</h2>
+<p><img src="/django_practice/img/2.12.png" class="pantalla" /></p>
+
+<h2 id="12-configuracion-de-pedido-distribuidor---laboratorio">12. CONFIGURACION DE PEDIDO DISTRIBUIDOR - LABORATORIO</h2>
+<p><img src="/django_practice/img/2.13.png" class="pantalla" /></p>
+
+<h2 id="13-solicitud-de-reembolso-cadena---distribuidor">13. SOLICITUD DE REEMBOLSO CADENA - DISTRIBUIDOR</h2>
+<p><img src="/django_practice/img/2.14.png" class="pantalla" /></p>
+
+<h2 id="14-solicitud-de-reembolso-distribuidor---laboratorio">14. SOLICITUD DE REEMBOLSO DISTRIBUIDOR - LABORATORIO</h2>
+<p><img src="/django_practice/img/2.15.png" class="pantalla" /></p>
+
+<h2 id="15-notificaciones-y-configuraciones-laboratorio">15. NOTIFICACIONES Y CONFIGURACIONES LABORATORIO</h2>
+<p><img src="/django_practice/img/2.16.png" class="pantalla" /></p>
+
+<h2 id="16-existencia-de-medicamentos">16. EXISTENCIA DE MEDICAMENTOS</h2>
+<p><img src="/django_practice/img/2.17.png" class="pantalla" /></p>
+
+:ET
