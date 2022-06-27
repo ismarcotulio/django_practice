@@ -353,8 +353,72 @@
 
 <p><code>sudo su - postgres</code></p>
 
-<p>1:08</p>
+<p>Estando dentro de postgres, podemos comprobar la version instalada de la siguiente forma:</p>
 
+<p><code>select version();</code></p>
+
+<p>En nuestro caso se instalo <u>Postgres 14.3</u>. Luego establecemos una contraseña para el usuario administrador:</p>
+
+<p><code>\password postgres</code></p>
+
+<p>Creamos un nuevo usuario:</p>
+
+<p><code>
+CREATE USER desarrollo WITH
+    LOGIN
+    SUPERUSER
+    INHERIT
+    CREATEDB
+    NOCREATEROLE
+    NOREPLICATION
+    ENCRYPTED PASSWORD "md55de75376a668539b002512e0bd19dd05";
+</code></p>
+
+<p>Creamos una base de datos:</p>
+
+<p><code>
+CREATE DATABASE "CANJESMARCASPROPIAS"
+    WITH
+    OWNER = desarrollo
+    ENCODING = "UTF8"
+    LC_COLLATE = "es_HN.UTF-8"
+    LC_CTYPE = "es_HN.UTF-8"
+    TABLESPACE = pg_default
+    CONNECTION_LIMIT = -1;
+    TEMPLATE = template0
+</code></p>
+
+<h3 id="5-creando-proyecto">5. Creando proyecto</h3>
+
+<p>Para crear un nuevo proyecto django, nos colocamos en la carpeta donde se encuentra el virtual environment y escribimos en terminal el siguiente comando:</p>
+
+<p><code>django-admin startproject canjesmarcaspropiasbackend</code></p>
+
+<p>Le damos permisos a la carpeta del proyecto</p>
+
+<p><code>chmod 777 -R canjesmarcaspropiasbackend</code></p>
+
+<h2 id="ambiente-qa">AMBIENTE QA</h2>
+
+<h3 id="1-datos-para-conectar-con-el-sistema-gestor-de-base-de-datos-en-el-servidor">1. Datos para conectar con el sistema gestor de base de datos en el servidor</h3>
+<ul>
+  <li>Host: 172.16.2.153</li>
+  <li>Puerto: 5432</li>
+  <li>Username: desarrollo</li>
+  <li>Password: 1nfr42018</li>
+</ul>
+
+<h2 id="ambiente-produccion">AMBIENTE PRODUCCION</h2>
+
+<h3 id="1-datos-para-conectar-con-el-sistema-gestor-de-base-de-datos-en-el-servidor-1">1. Datos para conectar con el sistema gestor de base de datos en el servidor</h3>
+<ul>
+  <li>Host: 172.16.2.217</li>
+  <li>Puerto: 5432</li>
+  <li>Username: desarrollo</li>
+  <li>Password: 1nfr42018</li>
+</ul>
+
+<p>2:37</p>
 
 
                 <hr style="visibility: hidden;">

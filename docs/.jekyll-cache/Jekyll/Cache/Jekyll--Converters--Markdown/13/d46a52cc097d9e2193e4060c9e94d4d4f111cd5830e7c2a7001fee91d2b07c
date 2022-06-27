@@ -1,0 +1,92 @@
+I"'<style>
+    .pantalla {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    p{
+        text-align: justify;
+    }
+</style>
+
+<p>El siguiente documento contiene los pasos realizados para desplegar todas las aplicaciones necesarias para trabajar en el proyecto de Automatizacion de Canjes y Marcas Propias del lado del backend.</p>
+
+<h2 id="ambiente-local-de-desarrollo">AMBIENTE LOCAL DE DESARROLLO</h2>
+
+<h3 id="1-sistema-operativo">1. Sistema Operativo</h3>
+<p>La mayoria de pasos descritos en esta documentacion se realizaron utilizando el sistema operativo <u>Ubuntu 20.04</u>. Tambien se puede utilizar cualquier otra distribucion de linux moderna.</p>
+
+<h3 id="2-editor-de-codigo">2. Editor de codigo</h3>
+<p>En este proyecto el equipo de desarrollo utiliza el editor de codigo <u>Visual Studio Code</u>.</p>
+
+<h3 id="3-preparando-django">3. Preparando Django</h3>
+
+<p>Primero creamos la carpeta en donde se encontrara nuestro proyecto. En este caso la carpeta se llama <b>AutomatizacionCanjesMarcasPropias</b>. Luego nos aseguramos de tener instalado el gestor de paquetes de python <u>pip</u>, sino, lo instalamos utilizando el siguiente comando:</p>
+
+<p><code>sudo apt install python3-pip</code></p>
+
+<p>Despues instalamos la dependencia de <u>Virtual Environment</u> con el siguiente comando:</p>
+
+<p><code>pip install virtualenv</code></p>
+
+<p>o dependiendo de la version de python:</p>
+
+<p><code>sudo apt install python3.10-venv</code></p>
+
+<p>Dentro de la carpeta del proyecto creamos un entorno virtual de python utilizando el siguiente comando:</p>
+
+<p><code>sudo python3 -m venv envautomatizacioncanjesmarcaspropias</code></p>
+
+<p>Se recomienda dar permisos a la carpeta raiz donde se encuentra nuestro proyecto utilizando el siguiente comando:</p>
+
+<p><code>sudo chmod 777 -R /home/$USER/documents</code></p>
+
+<p>Activamos el entorno virtual por medio del siguiente comando:</p>
+
+<p><code>source $RUTAENV/bin/activate</code></p>
+
+<p>Una vez activado el entorno virtual, procedemos a instalar django en su ultima version:</p>
+
+<p><code>pip install django</code></p>
+
+<p>En este proyecto se instalo <u>django 4.0.5</u>. Luego instalamos las siguientes librerias:</p>
+
+<p><code>pip install django-cors-headers</code></p>
+
+<p><code>pip install django-crontab</code></p>
+
+<p><code>pip install djangorestframework</code></p>
+
+<p><code>pip install requests</code></p>
+
+<p><code>pip install gunicorn</code></p>
+
+<p><code>pip install psycopg2-binary</code></p>
+
+<h3 id="4-preparando-base-de-datos">4. Preparando Base de Datos</h3>
+
+<p>El sistema gestor de base de datos que se utiliza para este proyecto es <u>postgres</u>. La base de datos como tal, se puede gestionar utilizando consola o por medio de un programa gestor con interfaz. En el caso de este proyecto de utilizo el programa gestor con interfaz DBeaver.</p>
+
+<p>En el entorno local se recomienda instalar la version de postgres que se encuentra en los servidores QA y Produccion, en este caso seria <u>postgres 10.21</u>. Para instalar una version especifica de postgres se recomienda descargar el codigo fuente correspondiente desde la documentacion y seguir los pasos para compilar y posteriormente ejecutar. Tambien se puede instalar la version mas reciente, pero hacer esto es menos recomendable ya que puede abrir paso a futuras incompatibilidades con los respectivos gestores de base de datos en los servidores. Para instalar la ultima version de postgres se utiliza el siguiente comando:</p>
+
+<p><code>sudo apt install -y postgresql postgresql-contrib postgresql-client</code></p>
+
+<p>Para verificar si se instalo postgres correctamente podemos utilizar el comando:</p>
+
+<p><code>sudo service postgresql restart</code></p>
+
+<p><code>sudo service postgresql status</code></p>
+
+<p>Una vez instalado postgres, entramos al sistema gestor como usuario administrador:</p>
+
+<p><code>sudo su - postgres</code></p>
+
+<p>Estando dentro de postgres, podemos comprobar la version instalada de la siguiente forma:</p>
+
+<p><code>select version();</code></p>
+
+<p>En nuestro caso se instalo <u>Postgres 14.3</u>.</p>
+
+:ET

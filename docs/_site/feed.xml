@@ -5,8 +5,8 @@
     <description>关于程序与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
     <link>http://localhost:4000/django_practice/</link>
     <atom:link href="http://localhost:4000/django_practice/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 27 Jun 2022 14:29:20 -0500</pubDate>
-    <lastBuildDate>Mon, 27 Jun 2022 14:29:20 -0500</lastBuildDate>
+    <pubDate>Mon, 27 Jun 2022 16:50:35 -0500</pubDate>
+    <lastBuildDate>Mon, 27 Jun 2022 16:50:35 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -193,8 +193,72 @@
 
 &lt;p&gt;&lt;code&gt;sudo su - postgres&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;1:08&lt;/p&gt;
+&lt;p&gt;Estando dentro de postgres, podemos comprobar la version instalada de la siguiente forma:&lt;/p&gt;
 
+&lt;p&gt;&lt;code&gt;select version();&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;En nuestro caso se instalo &lt;u&gt;Postgres 14.3&lt;/u&gt;. Luego establecemos una contraseña para el usuario administrador:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;\password postgres&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Creamos un nuevo usuario:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+CREATE USER desarrollo WITH
+    LOGIN
+    SUPERUSER
+    INHERIT
+    CREATEDB
+    NOCREATEROLE
+    NOREPLICATION
+    ENCRYPTED PASSWORD &quot;md55de75376a668539b002512e0bd19dd05&quot;;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Creamos una base de datos:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+CREATE DATABASE &quot;CANJESMARCASPROPIAS&quot;
+    WITH
+    OWNER = desarrollo
+    ENCODING = &quot;UTF8&quot;
+    LC_COLLATE = &quot;es_HN.UTF-8&quot;
+    LC_CTYPE = &quot;es_HN.UTF-8&quot;
+    TABLESPACE = pg_default
+    CONNECTION_LIMIT = -1;
+    TEMPLATE = template0
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-creando-proyecto&quot;&gt;5. Creando proyecto&lt;/h3&gt;
+
+&lt;p&gt;Para crear un nuevo proyecto django, nos colocamos en la carpeta donde se encuentra el virtual environment y escribimos en terminal el siguiente comando:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;django-admin startproject canjesmarcaspropiasbackend&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Le damos permisos a la carpeta del proyecto&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;chmod 777 -R canjesmarcaspropiasbackend&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ambiente-qa&quot;&gt;AMBIENTE QA&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-datos-para-conectar-con-el-sistema-gestor-de-base-de-datos-en-el-servidor&quot;&gt;1. Datos para conectar con el sistema gestor de base de datos en el servidor&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Host: 172.16.2.153&lt;/li&gt;
+  &lt;li&gt;Puerto: 5432&lt;/li&gt;
+  &lt;li&gt;Username: desarrollo&lt;/li&gt;
+  &lt;li&gt;Password: 1nfr42018&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ambiente-produccion&quot;&gt;AMBIENTE PRODUCCION&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-datos-para-conectar-con-el-sistema-gestor-de-base-de-datos-en-el-servidor-1&quot;&gt;1. Datos para conectar con el sistema gestor de base de datos en el servidor&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Host: 172.16.2.217&lt;/li&gt;
+  &lt;li&gt;Puerto: 5432&lt;/li&gt;
+  &lt;li&gt;Username: desarrollo&lt;/li&gt;
+  &lt;li&gt;Password: 1nfr42018&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2:37&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Jun 2022 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/django_practice/2022/06/27/desplegue-backend/</link>

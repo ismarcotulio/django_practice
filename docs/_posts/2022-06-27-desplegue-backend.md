@@ -92,5 +92,66 @@ Una vez instalado postgres, entramos al sistema gestor como usuario administrado
 
 <code>sudo su - postgres</code>
 
-1:08
+Estando dentro de postgres, podemos comprobar la version instalada de la siguiente forma:
 
+<code>select version();</code>
+
+En nuestro caso se instalo <u>Postgres 14.3</u>. Luego establecemos una contraseña para el usuario administrador:
+
+<code>\password postgres</code>
+
+Creamos un nuevo usuario:
+
+<code>
+CREATE USER desarrollo WITH
+    LOGIN
+    SUPERUSER
+    INHERIT
+    CREATEDB
+    NOCREATEROLE
+    NOREPLICATION
+    ENCRYPTED PASSWORD "md55de75376a668539b002512e0bd19dd05";
+</code>
+
+Creamos una base de datos:
+
+<code>
+CREATE DATABASE "CANJESMARCASPROPIAS"
+    WITH
+    OWNER = desarrollo
+    ENCODING = "UTF8"
+    LC_COLLATE = "es_HN.UTF-8"
+    LC_CTYPE = "es_HN.UTF-8"
+    TABLESPACE = pg_default
+    CONNECTION_LIMIT = -1;
+    TEMPLATE = template0
+</code>
+
+### 5. Creando proyecto
+
+Para crear un nuevo proyecto django, nos colocamos en la carpeta donde se encuentra el virtual environment y escribimos en terminal el siguiente comando:
+
+<code>django-admin startproject canjesmarcaspropiasbackend</code>
+
+Le damos permisos a la carpeta del proyecto
+
+<code>chmod 777 -R canjesmarcaspropiasbackend</code>
+
+## AMBIENTE QA
+
+### 1. Datos para conectar con el sistema gestor de base de datos en el servidor
+- Host: 172.16.2.153
+- Puerto: 5432
+- Username: desarrollo
+- Password: 1nfr42018
+
+## AMBIENTE PRODUCCION
+
+### 1. Datos para conectar con el sistema gestor de base de datos en el servidor
+- Host: 172.16.2.217
+- Puerto: 5432
+- Username: desarrollo
+- Password: 1nfr42018
+
+
+2:37
