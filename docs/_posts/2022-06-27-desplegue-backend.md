@@ -137,6 +137,10 @@ Le damos permisos a la carpeta del proyecto
 
 <code>chmod 777 -R canjesmarcaspropiasbackend</code>
 
+### 6. Agregando archivo local_settings.py
+
+
+
 ## AMBIENTE QA
 
 ### 1. Datos para conectar con el sistema gestor de base de datos en el servidor
@@ -144,6 +148,25 @@ Le damos permisos a la carpeta del proyecto
 - Puerto: 5432
 - Username: desarrollo
 - Password: 1nfr42018
+
+### 2. Conectando al servidor
+
+Para conectarnos al servidor por secure shell utilizamos el siguiente comando:
+<code>ssh infra@172.16.2.223</code>
+
+### 3. Despliegue con Nginx
+
+Estando dentro del servidor, nos vamos a la carpeta /html y clonamos nuestro proyecto de django que fue previamente subido a un repositorio privado en Github:
+
+<code>cd /var/www/html/</code>
+
+<code>git clone https://github.com/PaolaMolinaZeron/canjesmarcaspropiasbackend.git</code>
+
+Luego nos vamos a la carpeta de entornos y en ella creamos un entorno virtual de la misma forma y con las mismas dependencias del entorno local.
+
+<code>cd /var/www/html/Entornos/</code>
+
+<code>python3 -m venv CANJESMARCASPROPIAS</code>
 
 ## AMBIENTE PRODUCCION
 

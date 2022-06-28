@@ -5,8 +5,8 @@
     <description>关于程序与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
     <link>http://localhost:4000/django_practice/</link>
     <atom:link href="http://localhost:4000/django_practice/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 27 Jun 2022 16:50:35 -0500</pubDate>
-    <lastBuildDate>Mon, 27 Jun 2022 16:50:35 -0500</lastBuildDate>
+    <pubDate>Tue, 28 Jun 2022 07:51:47 -0500</pubDate>
+    <lastBuildDate>Tue, 28 Jun 2022 07:51:47 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -238,6 +238,8 @@ CREATE DATABASE &quot;CANJESMARCASPROPIAS&quot;
 
 &lt;p&gt;&lt;code&gt;chmod 777 -R canjesmarcaspropiasbackend&lt;/code&gt;&lt;/p&gt;
 
+&lt;h3 id=&quot;6-agregando-archivo-local_settingspy&quot;&gt;6. Agregando archivo local_settings.py&lt;/h3&gt;
+
 &lt;h2 id=&quot;ambiente-qa&quot;&gt;AMBIENTE QA&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-datos-para-conectar-con-el-sistema-gestor-de-base-de-datos-en-el-servidor&quot;&gt;1. Datos para conectar con el sistema gestor de base de datos en el servidor&lt;/h3&gt;
@@ -247,6 +249,25 @@ CREATE DATABASE &quot;CANJESMARCASPROPIAS&quot;
   &lt;li&gt;Username: desarrollo&lt;/li&gt;
   &lt;li&gt;Password: 1nfr42018&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&quot;2-conectando-al-servidor&quot;&gt;2. Conectando al servidor&lt;/h3&gt;
+
+&lt;p&gt;Para conectarnos al servidor por secure shell utilizamos el siguiente comando:
+&lt;code&gt;ssh infra@172.16.2.223&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-despliegue-con-nginx&quot;&gt;3. Despliegue con Nginx&lt;/h3&gt;
+
+&lt;p&gt;Estando dentro del servidor, nos vamos a la carpeta /html y clonamos nuestro proyecto de django que fue previamente subido a un repositorio privado en Github:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd /var/www/html/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git clone https://github.com/PaolaMolinaZeron/canjesmarcaspropiasbackend.git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Luego nos vamos a la carpeta de entornos y en ella creamos un entorno virtual de la misma forma y con las mismas dependencias del entorno local.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd /var/www/html/Entornos/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python3 -m venv CANJESMARCASPROPIAS&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;ambiente-produccion&quot;&gt;AMBIENTE PRODUCCION&lt;/h2&gt;
 

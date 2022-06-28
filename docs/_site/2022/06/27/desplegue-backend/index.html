@@ -398,6 +398,8 @@ CREATE DATABASE "CANJESMARCASPROPIAS"
 
 <p><code>chmod 777 -R canjesmarcaspropiasbackend</code></p>
 
+<h3 id="6-agregando-archivo-local_settingspy">6. Agregando archivo local_settings.py</h3>
+
 <h2 id="ambiente-qa">AMBIENTE QA</h2>
 
 <h3 id="1-datos-para-conectar-con-el-sistema-gestor-de-base-de-datos-en-el-servidor">1. Datos para conectar con el sistema gestor de base de datos en el servidor</h3>
@@ -407,6 +409,25 @@ CREATE DATABASE "CANJESMARCASPROPIAS"
   <li>Username: desarrollo</li>
   <li>Password: 1nfr42018</li>
 </ul>
+
+<h3 id="2-conectando-al-servidor">2. Conectando al servidor</h3>
+
+<p>Para conectarnos al servidor por secure shell utilizamos el siguiente comando:
+<code>ssh infra@172.16.2.223</code></p>
+
+<h3 id="3-despliegue-con-nginx">3. Despliegue con Nginx</h3>
+
+<p>Estando dentro del servidor, nos vamos a la carpeta /html y clonamos nuestro proyecto de django que fue previamente subido a un repositorio privado en Github:</p>
+
+<p><code>cd /var/www/html/</code></p>
+
+<p><code>git clone https://github.com/PaolaMolinaZeron/canjesmarcaspropiasbackend.git</code></p>
+
+<p>Luego nos vamos a la carpeta de entornos y en ella creamos un entorno virtual de la misma forma y con las mismas dependencias del entorno local.</p>
+
+<p><code>cd /var/www/html/Entornos/</code></p>
+
+<p><code>python3 -m venv CANJESMARCASPROPIAS</code></p>
 
 <h2 id="ambiente-produccion">AMBIENTE PRODUCCION</h2>
 
