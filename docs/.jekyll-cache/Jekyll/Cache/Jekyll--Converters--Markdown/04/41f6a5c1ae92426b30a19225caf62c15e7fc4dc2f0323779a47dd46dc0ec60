@@ -1,0 +1,679 @@
+I"�@<style type="text/css">
+body {
+font-family: Trebuchet MS, sans-serif;
+font-size: 15px;
+color: #444;
+margin-right: 24px;
+}
+
+h1	{
+font-size: 25px;
+}
+h2	{
+font-size: 20px;
+}
+h3	{
+font-size: 16px;
+font-weight: bold;
+}
+hr	{
+height: 1px;
+border: 0;
+color: #ddd;
+background-color: #ddd;
+}
+
+.app-desc {
+clear: both;
+margin-left: 20px;
+}
+.param-name {
+width: 100%;
+}
+.license-info {
+margin-left: 20px;
+}
+
+.license-url {
+margin-left: 20px;
+}
+
+.model {
+margin: 0 0 0px 20px;
+}
+
+.method {
+margin-left: 20px;
+}
+
+.method-notes	{
+margin: 10px 0 20px 0;
+font-size: 90%;
+color: #555;
+}
+
+pre {
+padding: 10px;
+margin-bottom: 2px;
+}
+
+.http-method {
+text-transform: uppercase;
+}
+
+pre.get {
+background-color: #0f6ab4;
+}
+
+pre.post {
+background-color: #10a54a;
+}
+
+pre.put {
+background-color: #c5862b;
+}
+
+pre.delete {
+background-color: #a41e22;
+}
+
+.huge	{
+color: #fff;
+}
+
+pre.example {
+background-color: #f3f3f3;
+padding: 10px;
+border: 1px solid #ddd;
+}
+
+code {
+white-space: pre;
+}
+
+.nickname {
+font-weight: bold;
+}
+
+.method-path {
+font-size: 1.5em;
+background-color: #0f6ab4;
+}
+
+.up {
+float:right;
+}
+
+.parameter {
+width: 500px;
+}
+
+.param {
+width: 500px;
+padding: 10px 0 0 20px;
+font-weight: bold;
+}
+
+.param-desc {
+width: 700px;
+padding: 0 0 0 20px;
+color: #777;
+}
+
+.param-type {
+font-style: italic;
+}
+
+.param-enum-header {
+width: 700px;
+padding: 0 0 0 60px;
+color: #777;
+font-weight: bold;
+}
+
+.param-enum {
+width: 700px;
+padding: 0 0 0 80px;
+color: #777;
+font-style: italic;
+}
+
+.field-label {
+padding: 0;
+margin: 0;
+clear: both;
+}
+
+.field-items	{
+padding: 0 0 15px 0;
+margin-bottom: 15px;
+}
+
+.return-type {
+clear: both;
+padding-bottom: 10px;
+}
+
+.param-header {
+font-weight: bold;
+}
+
+.method-tags {
+text-align: right;
+}
+
+.method-tag {
+background: none repeat scroll 0% 0% #24A600;
+border-radius: 3px;
+padding: 2px 10px;
+margin: 2px;
+color: #FFF;
+display: inline-block;
+text-decoration: none;
+}
+
+</style>
+
+<p>Esta es una descripcion de las APIs necesarias para registrar un usuario en distribuidores los cuales se encuentran en el servidor backend del proyecto Canjes de Marcas Propias propiedad de Farinter. Las peticiones se pueden realizar al servidor de calidad cuya direccion es: <a href="http://172.16.2.223:8088/api/">http://172.16.2.223:8088/api/</a>.</p>
+
+<p>Informacion de contacto: <a href="marco.ruiz@farinter.com">marco.ruiz@farinter.com</a></p>
+
+<p>Version: 1.0.0</p>
+
+<h2 id="metodos">Metodos</h2>
+
+<p>[ Saltar a <a href="#__Models">Modelos</a> ]</p>
+
+<h3 id="tabla-de-contenidos">Tabla de Contenidos</h3>
+
+<h4 id="distribuidores"><a href="#Distribuidores">Distribuidores</a></h4>
+
+<ul>
+  <li><a href="#distribuidoresGet"><code class="language-plaintext highlighter-rouge">get /distribuidores</code></a></li>
+</ul>
+
+<h4 id="roles"><a href="#Roles">Roles</a></h4>
+
+<ul>
+  <li><a href="#rolesGet"><code class="language-plaintext highlighter-rouge">get /roles</code></a></li>
+</ul>
+
+<h4 id="usuarios"><a href="#Usuarios">Usuarios</a></h4>
+
+<ul>
+  <li><a href="#usuariosGet"><code class="language-plaintext highlighter-rouge">get /usuarios</code></a></li>
+  <li><a href="#usuariosUsuariosIdGet"><code class="language-plaintext highlighter-rouge">get /usuarios/{usuariosId}</code></a></li>
+</ul>
+
+<h4 id="usuarioxperfilxdistribuidor"><a href="#Usuarioxperfilxdistribuidor">Usuarioxperfilxdistribuidor</a></h4>
+
+<ul>
+  <li><a href="#usuarioxperfilxdistribuidorPost"><code class="language-plaintext highlighter-rouge">post /usuarioxperfilxdistribuidor</code></a></li>
+</ul>
+
+<h1 id="distribuidores-1">Distribuidores</h1>
+
+<p><a href="#__Methods">Up</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>get /distribuidores
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Devuelve los distribuidores registrados en el sistema (distribuidoresGet)</p>
+
+<p>Se obtienen determinados distribuidores registrados de acuerdo a un parametro indicado o sin el.</p>
+
+<h3 id="query-parameters">Query parameters</h3>
+
+<p>usuario (optional)</p>
+
+<p>Query Parameter — Este parametro se envia en conjunto con el parametro “perfil” para retornar distribuidores en los que no se ah registrado con un rol en especifico un usuario.</p>
+
+<p>perfil (optional)</p>
+
+<p>Query Parameter — Este parametro se envia en conjunto con el parametro “usuario” para retornar distribuidores en los que no se ah registrado con un rol en especifico un usuario.</p>
+
+<h3 id="return-type">Return type</h3>
+
+<p>array[<a href="#Distribuidores">Distribuidores</a>]</p>
+
+<h3 id="example-data">Example data</h3>
+
+<p>Content-Type: application/json</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="example-data-1">Example data</h3>
+
+<p>Content-Type: application/xml</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>123456789
+aeiou
+2000-01-23T04:56:07.000Z
+123
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="produces">Produces</h3>
+
+<p>This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">application/json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/xml</code></li>
+</ul>
+
+<h3 id="responses">Responses</h3>
+
+<h4 id="200">200</h4>
+
+<p>Operacion exitosa</p>
+
+<hr />
+
+<h1 id="roles-1">Roles</h1>
+
+<p><a href="#__Methods">Up</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>get /roles
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Devuelve los roles de usuario en el sistema (rolesGet)</p>
+
+<p>Se obtienen determinados roles de acuerdo a un parametro indicado o sin el.</p>
+
+<h3 id="query-parameters-1">Query parameters</h3>
+
+<p>distribuidor (optional)</p>
+
+<p>Query Parameter — Permite retornar los roles que estan relacionados unicamente con el modulo de Distribuidor.</p>
+
+<h3 id="return-type-1">Return type</h3>
+
+<p>array[<a href="#Roles">Roles</a>]</p>
+
+<h3 id="example-data-2">Example data</h3>
+
+<p>Content-Type: application/json</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="example-data-3">Example data</h3>
+
+<p>Content-Type: application/xml</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>123456789
+aeiou
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="produces-1">Produces</h3>
+
+<p>This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">application/json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/xml</code></li>
+</ul>
+
+<h3 id="responses-1">Responses</h3>
+
+<h4 id="200-1">200</h4>
+
+<p>Operacion exitosa</p>
+
+<hr />
+
+<h1 id="usuarios-1">Usuarios</h1>
+
+<p><a href="#__Methods">Up</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>get /usuarios
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Devuelve los usuarios del sistema (usuariosGet)</p>
+
+<p>Se obtienen determinados usuarios de acuerdo a un parametro indicado o sin el.</p>
+
+<h3 id="query-parameters-2">Query parameters</h3>
+
+<p>limit (optional)</p>
+
+<p>Query Parameter — Permite retornar un limite de usuarios por peticion. format: int64</p>
+
+<h3 id="return-type-2">Return type</h3>
+
+<p>array[<a href="#Usuario">Usuario</a>]</p>
+
+<h3 id="example-data-4">Example data</h3>
+
+<p>Content-Type: application/json</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="example-data-5">Example data</h3>
+
+<p>Content-Type: application/xml</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre>123456789
+
+
+aeiou
+2000-01-23T04:56:07.000Z
+true
+aeiou
+aeiou
+aeiou
+aeiou
+true
+true
+2000-01-23T04:56:07.000Z
+
+123
+
+
+aeiou
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="produces-2">Produces</h3>
+
+<p>This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">application/json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/xml</code></li>
+</ul>
+
+<h3 id="responses-2">Responses</h3>
+
+<h4 id="200-2">200</h4>
+
+<p>Operacion exitosa</p>
+
+<hr />
+
+<p><a href="#__Methods">Up</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>get /usuarios/{usuariosId}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Encuentra usuarios segun su Id (usuariosUsuariosIdGet)</p>
+
+<p>Retorna un solo usuario</p>
+
+<h3 id="path-parameters">Path parameters</h3>
+
+<p>usuariosId (required)</p>
+
+<p>Path Parameter — ID del usuario a retornar format: int64</p>
+
+<h3 id="return-type-3">Return type</h3>
+
+<p><a href="#Usuario">Usuario</a></p>
+
+<h3 id="example-data-6">Example data</h3>
+
+<p>Content-Type: application/json</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{"empty": false}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="example-data-7">Example data</h3>
+
+<p>Content-Type: application/xml</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre>123456789
+
+
+aeiou
+2000-01-23T04:56:07.000Z
+true
+aeiou
+aeiou
+aeiou
+aeiou
+true
+true
+2000-01-23T04:56:07.000Z
+
+123
+
+
+aeiou
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="produces-3">Produces</h3>
+
+<p>This API call produces the following media types according to the Accept request header; the media type will be conveyed by the Content-Type response header.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">application/json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/xml</code></li>
+</ul>
+
+<h3 id="responses-3">Responses</h3>
+
+<h4 id="200-3">200</h4>
+
+<p>Operacion exitosa <a href="#Usuario">Usuario</a></p>
+
+<h4 id="400">400</h4>
+
+<p>Invalid ID supplied<a href="#"></a></p>
+
+<h4 id="404">404</h4>
+
+<p>Pet not found<a href="#"></a></p>
+
+<hr />
+
+<h1 id="usuarioxperfilxdistribuidor-1">Usuarioxperfilxdistribuidor</h1>
+
+<p><a href="#__Methods">Up</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>post /usuarioxperfilxdistribuidor
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Registra a un usuario en distribuidor con un rol especifico. (usuarioxperfilxdistribuidorPost)</p>
+
+<h3 id="consumes">Consumes</h3>
+
+<p>This API call consumes the following media types via the Content-Type request header:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">application/json</code></li>
+</ul>
+
+<h3 id="request-body">Request body</h3>
+
+<p>usuarioxperfilxdistribuidor <a href="#UsuarioxPerfilxDistribuidor">UsuarioxPerfilxDistribuidor</a> (optional)</p>
+
+<p>Body Parameter — Datos de registro.</p>
+
+<h3 id="responses-4">Responses</h3>
+
+<h4 id="201">201</h4>
+
+<p>Created<a href="#"></a></p>
+
+<hr />
+
+<h2 id="models">Models</h2>
+
+<p>[ Jump to <a href="#__Methods">Methods</a> ]</p>
+
+<h3 id="table-of-contents">Table of Contents</h3>
+
+<ol>
+  <li><a href="#Distribuidores"><code class="language-plaintext highlighter-rouge">Distribuidores</code> -</a></li>
+  <li><a href="#Group"><code class="language-plaintext highlighter-rouge">Group</code> -</a></li>
+  <li><a href="#Roles"><code class="language-plaintext highlighter-rouge">Roles</code> -</a></li>
+  <li><a href="#Usuario"><code class="language-plaintext highlighter-rouge">Usuario</code> -</a></li>
+  <li><a href="#UsuarioxPerfilxDistribuidor"><code class="language-plaintext highlighter-rouge">UsuarioxPerfilxDistribuidor</code> -</a></li>
+</ol>
+
+<h3 id="distribuidores---up"><code class="language-plaintext highlighter-rouge">Distribuidores</code> - <a href="#__Models">Up</a></h3>
+
+<p>id (optional)</p>
+
+<p><a href="#long">Long</a> format: int64</p>
+
+<p>nombre (optional)</p>
+
+<p><a href="#string">String</a></p>
+
+<p>fecha_creacion (optional)</p>
+
+<p><a href="#DateTime">Date</a> format: date-time</p>
+
+<p>pais (optional)</p>
+
+<p><a href="#integer">Integer</a></p>
+
+<h3 id="group---up"><code class="language-plaintext highlighter-rouge">Group</code> - <a href="#__Models">Up</a></h3>
+
+<p>id (optional)</p>
+
+<p><a href="#long">Long</a> format: int64</p>
+
+<p>name (optional)</p>
+
+<p><a href="#string">String</a></p>
+
+<h3 id="roles---up"><code class="language-plaintext highlighter-rouge">Roles</code> - <a href="#__Models">Up</a></h3>
+
+<p>id (optional)</p>
+
+<p><a href="#long">Long</a> format: int64</p>
+
+<p>name (optional)</p>
+
+<p><a href="#string">String</a></p>
+
+<h3 id="usuario---up"><code class="language-plaintext highlighter-rouge">Usuario</code> - <a href="#__Models">Up</a></h3>
+
+<p>id (optional)</p>
+
+<p><a href="#long">Long</a> format: int64</p>
+
+<p>groups_list (optional)</p>
+
+<p><a href="#Group">array[Group]</a></p>
+
+<p>password (optional)</p>
+
+<p><a href="#string">String</a></p>
+
+<p>last_login (optional)</p>
+
+<p><a href="#DateTime">Date</a> format: date-time</p>
+
+<p>is_superuser (optional)</p>
+
+<p><a href="#boolean">Boolean</a></p>
+
+<p>username (optional)</p>
+
+<p><a href="#string">String</a></p>
+
+<p>first_name (optional)</p>
+
+<p><a href="#string">String</a></p>
+
+<p>last_name (optional)</p>
+
+<p><a href="#string">String</a></p>
+
+<p>email (optional)</p>
+
+<p><a href="#string">String</a></p>
+
+<p>is_staff (optional)</p>
+
+<p><a href="#boolean">Boolean</a></p>
+
+<p>is_active (optional)</p>
+
+<p><a href="#boolean">Boolean</a></p>
+
+<p>date_joined (optional)</p>
+
+<p><a href="#DateTime">Date</a> format: date-time</p>
+
+<p>groups (optional)</p>
+
+<p><a href="#integer">array[Integer]</a></p>
+
+<p>user_permissions (optional)</p>
+
+<p><a href="#string">array[String]</a></p>
+
+<h3 id="usuarioxperfilxdistribuidor---up"><code class="language-plaintext highlighter-rouge">UsuarioxPerfilxDistribuidor</code> - <a href="#__Models">Up</a></h3>
+
+<p>id (optional)</p>
+
+<p><a href="#long">Long</a> format: int64</p>
+
+<p>distribuidor (optional)</p>
+
+<p><a href="#integer">Integer</a></p>
+
+<p>usuario (optional)</p>
+
+<p><a href="#integer">Integer</a></p>
+
+<p>perfil (optional)</p>
+
+<p><a href="#integer">Integer</a></p>
+:ET

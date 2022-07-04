@@ -1,15 +1,4 @@
----
-layout: post
-title: "APIS PARA EL REGISTRO DE USUARIOS EN CADENA"
-subtitle: 'Documentacion utilizando el estandar Open API Specification version 2'
-author: "Marco Tulio Ruiz"
-header-style: text
-tags:
-- apis
-- open api specification
-- backend
----
-<style type="text/css">
+I"\I<style type="text/css">
 body {
 font-family: Trebuchet MS, sans-serif;
 font-size: 15px;
@@ -182,66 +171,71 @@ color: #FFF;
 display: inline-block;
 text-decoration: none;
 }
+
 </style>
-<div class="app-desc">Esta es una descripcion de las APIs de Usuario que se encuentran en el servidor backend del proyecto Canjes de Marcas Propias propiedad de Farinter. Las peticiones se pueden realizar al servidor de calidad cuya direccion es:
+
+<div class="app-desc">Esta es una descripcion de las APIs necesarias para registrar un usuario en distribuidores los cuales se encuentran en el servidor backend del proyecto Canjes de Marcas Propias propiedad de Farinter. Las peticiones se pueden realizar al servidor de calidad cuya direccion es:
 <a href="http://172.16.2.223:8088/api/">http://172.16.2.223:8088/api/</a>.</div>
 <div class="app-desc">Informacion de contacto: <a href="marco.ruiz@farinter.com">marco.ruiz@farinter.com</a></div>
 <div class="app-desc">Version: 1.0.0</div>
 
-## <a name="__Methods">Metodos</a>
-[ Jump to <a href="#__Models">Modelos</a> ]
+<h2 id="metodos"><a name="__Methods">Metodos</a></h2>
+<p>[ Saltar a <a href="#__Models">Modelos</a> ]</p>
 
-<b>Tabla de contenido </b>
+<h3 id="tabla-de-contenidos">Tabla de Contenidos</h3>
 <div class="method-summary"></div>
-Roles
+<h4><a href="#Distribuidores">Distribuidores</a></h4>
 <ul>
-<li><a href="#cadenasGet"><code><span class="http-method">get</span> /cadenas</code></a></li>
+<li><a href="#distribuidoresGet"><code><span class="http-method">get</span> /distribuidores</code></a></li>
+</ul>
+<h4><a href="#Roles">Roles</a></h4>
+<ul>
 <li><a href="#rolesGet"><code><span class="http-method">get</span> /roles</code></a></li>
 </ul>
-Usuarios
+<h4><a href="#Usuarios">Usuarios</a></h4>
 <ul>
 <li><a href="#usuariosGet"><code><span class="http-method">get</span> /usuarios</code></a></li>
 <li><a href="#usuariosUsuariosIdGet"><code><span class="http-method">get</span> /usuarios/{usuariosId}</code></a></li>
 </ul>
-Usuarioxperfilxcadena
+<h4><a href="#Usuarioxperfilxdistribuidor">Usuarioxperfilxdistribuidor</a></h4>
 <ul>
-<li><a href="#usuarioxperfilxcadenaPost"><code><span class="http-method">post</span> /usuarioxperfilxcadena</code></a></li>
+<li><a href="#usuarioxperfilxdistribuidorPost"><code><span class="http-method">post</span> /usuarioxperfilxdistribuidor</code></a></li>
 </ul>
 
-# <a name="Roles">Roles</a>
-<div class="method"><a name="cadenasGet"/>
+<h1><a name="Distribuidores">Distribuidores</a></h1>
+<div class="method"><a name="distribuidoresGet" />
 <div class="method-path">
 <a class="up" href="#__Methods">Up</a>
-<pre class="get"><code class="huge"><span class="http-method">get</span> /cadenas</code></pre></div>
-<div class="method-summary">Devuelve las cadenas del sistema (<span class="nickname">cadenasGet</span>)</div>
-<div class="method-notes">Se obtienen determinadas cadenas de acuerdo a un parametro indicado o sin el.</div>
+<pre class="get"><code class="huge"><span class="http-method">get</span> /distribuidores</code></pre></div>
+<div class="method-summary">Devuelve los distribuidores registrados en el sistema (<span class="nickname">distribuidoresGet</span>)</div>
+<div class="method-notes">Se obtienen determinados distribuidores registrados de acuerdo a un parametro indicado o sin el.</div>
 
 
 
 
 
-<b>Query parameters</b>
+<h3 class="field-label">Query parameters</h3>
 <div class="field-items">
 <div class="param">usuario (optional)</div>
 
-<div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; Este parametro se envia en conjunto con el parametro &quot;perfil&quot; para retornar cadenas en las que no se ah registrado con un rol en especifico un usuario. </div><div class="param">perfil (optional)</div>
+<div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; Este parametro se envia en conjunto con el parametro &quot;perfil&quot; para retornar distribuidores en los que no se ah registrado con un rol en especifico un usuario. </div><div class="param">perfil (optional)</div>
 
-<div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; Este parametro se envia en conjunto con el parametro &quot;usuario&quot; para retornar cadenas en las que no se ah registrado con un rol en especifico un usuario. </div>
+<div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; Este parametro se envia en conjunto con el parametro &quot;usuario&quot; para retornar distribuidores en los que no se ah registrado con un rol en especifico un usuario. </div>
 </div>  <!-- field-items -->
 
 
-<b>Retornar tipo</b>
+<h3 class="field-label">Return type</h3>
 <div class="return-type">
-array[<a href="#Cadenas">Cadenas</a>]
+array[<a href="#Distribuidores">Distribuidores</a>]
 
 </div>
 
 <!--Todo: process Response Object and its headers, schema, examples -->
 
-<b>Datos de ejemplo</b>
+<h3 class="field-label">Example data</h3>
 <div class="example-data-content-type">Content-Type: application/json</div>
 <pre class="example"><code>{}</code></pre>
-<b>Datos de ejemplo</b>
+<h3 class="field-label">Example data</h3>
 <div class="example-data-content-type">Content-Type: application/xml</div>
 <pre class="example"><code><Roles>
 <id>123456789</id>
@@ -250,21 +244,24 @@ array[<a href="#Cadenas">Cadenas</a>]
 <pais>123</pais>
 </Roles></code></pre>
 
-<b>Produce</b>
-Esta API produce los siguientes tipos de datos al <span class="header">Accept</span> request header;
+<h3 class="field-label">Produces</h3>
+This API call produces the following media types according to the <span class="header">Accept</span> request header;
 the media type will be conveyed by the <span class="header">Content-Type</span> response header.
 <ul>
 <li><code>application/json</code></li>
 <li><code>application/xml</code></li>
 </ul>
 
-<b>Respuestas</b>
-200
+<h3 class="field-label">Responses</h3>
+<h4 class="field-label">200</h4>
 Operacion exitosa
 
-</div> <!-- method -->
-<hr/>
-<div class="method"><a name="rolesGet"/>
+</div>
+<p><!-- method --></p>
+<hr />
+
+<h1><a name="Roles">Roles</a></h1>
+<div class="method"><a name="rolesGet" />
 <div class="method-path">
 <a class="up" href="#__Methods">Up</a>
 <pre class="get"><code class="huge"><span class="http-method">get</span> /roles</code></pre></div>
@@ -275,15 +272,15 @@ Operacion exitosa
 
 
 
-<b>Query parameters</b>
+<h3 class="field-label">Query parameters</h3>
 <div class="field-items">
-<div class="param">cadena (optional)</div>
+<div class="param">distribuidor (optional)</div>
 
-<div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; Permite retornar los roles que estan relacionados unicamente con el modulo de Cadena. </div>
+<div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; Permite retornar los roles que estan relacionados unicamente con el modulo de Distribuidor. </div>
 </div>  <!-- field-items -->
 
 
-<b>Retornar tipo</b>
+<h3 class="field-label">Return type</h3>
 <div class="return-type">
 array[<a href="#Roles">Roles</a>]
 
@@ -291,32 +288,34 @@ array[<a href="#Roles">Roles</a>]
 
 <!--Todo: process Response Object and its headers, schema, examples -->
 
-<b>Datos de ejemplo</b>
+<h3 class="field-label">Example data</h3>
 <div class="example-data-content-type">Content-Type: application/json</div>
 <pre class="example"><code>{}</code></pre>
-<b>Datos de ejemplo</b>
+<h3 class="field-label">Example data</h3>
 <div class="example-data-content-type">Content-Type: application/xml</div>
 <pre class="example"><code><Roles>
 <id>123456789</id>
 <name>aeiou</name>
 </Roles></code></pre>
 
-<b>Produce</b>
-Esta API produce los siguientes tipos de datos al <span class="header">Accept</span> request header;
+<h3 class="field-label">Produces</h3>
+This API call produces the following media types according to the <span class="header">Accept</span> request header;
 the media type will be conveyed by the <span class="header">Content-Type</span> response header.
 <ul>
 <li><code>application/json</code></li>
 <li><code>application/xml</code></li>
 </ul>
 
-<b>Respuestas</b>
-200
+<h3 class="field-label">Responses</h3>
+<h4 class="field-label">200</h4>
 Operacion exitosa
 
-</div> <!-- method -->
-<hr/>
-# <a name="Usuarios">Usuarios</a>
-<div class="method"><a name="usuariosGet"/>
+</div>
+<p><!-- method --></p>
+<hr />
+
+<h1><a name="Usuarios">Usuarios</a></h1>
+<div class="method"><a name="usuariosGet" />
 <div class="method-path">
 <a class="up" href="#__Methods">Up</a>
 <pre class="get"><code class="huge"><span class="http-method">get</span> /usuarios</code></pre></div>
@@ -327,7 +326,7 @@ Operacion exitosa
 
 
 
-<b>Query parameters</b>
+<h3 class="field-label">Query parameters</h3>
 <div class="field-items">
 <div class="param">limit (optional)</div>
 
@@ -335,7 +334,7 @@ Operacion exitosa
 </div>  <!-- field-items -->
 
 
-<b>Retornar tipo</b>
+<h3 class="field-label">Return type</h3>
 <div class="return-type">
 array[<a href="#Usuario">Usuario</a>]
 
@@ -343,10 +342,10 @@ array[<a href="#Usuario">Usuario</a>]
 
 <!--Todo: process Response Object and its headers, schema, examples -->
 
-<b>Datos de ejemplo</b>
+<h3 class="field-label">Example data</h3>
 <div class="example-data-content-type">Content-Type: application/json</div>
 <pre class="example"><code>{}</code></pre>
-<b>Datos de ejemplo</b>
+<h3 class="field-label">Example data</h3>
 <div class="example-data-content-type">Content-Type: application/xml</div>
 <pre class="example"><code><Usuario>
 <id>123456789</id>
@@ -370,28 +369,30 @@ array[<a href="#Usuario">Usuario</a>]
 </user_permissions>
 </Usuario></code></pre>
 
-<b>Produce</b>
-Esta API produce los siguientes tipos de datos al <span class="header">Accept</span> request header;
+<h3 class="field-label">Produces</h3>
+This API call produces the following media types according to the <span class="header">Accept</span> request header;
 the media type will be conveyed by the <span class="header">Content-Type</span> response header.
 <ul>
 <li><code>application/json</code></li>
 <li><code>application/xml</code></li>
 </ul>
 
-<b>Respuestas</b>
-200
+<h3 class="field-label">Responses</h3>
+<h4 class="field-label">200</h4>
 Operacion exitosa
 
-</div> <!-- method -->
-<hr/>
-<div class="method"><a name="usuariosUsuariosIdGet"/>
+</div>
+<p><!-- method --></p>
+<hr />
+
+<div class="method"><a name="usuariosUsuariosIdGet" />
 <div class="method-path">
 <a class="up" href="#__Methods">Up</a>
 <pre class="get"><code class="huge"><span class="http-method">get</span> /usuarios/{usuariosId}</code></pre></div>
 <div class="method-summary">Encuentra usuarios segun su Id (<span class="nickname">usuariosUsuariosIdGet</span>)</div>
 <div class="method-notes">Retorna un solo usuario</div>
 
-<b>Path parameters</b>
+<h3 class="field-label">Path parameters</h3>
 <div class="field-items">
 <div class="param">usuariosId (required)</div>
 
@@ -403,7 +404,7 @@ Operacion exitosa
 
 
 
-<b>Retornar tipo</b>
+<h3 class="field-label">Return type</h3>
 <div class="return-type">
 <a href="#Usuario">Usuario</a>
 
@@ -411,10 +412,10 @@ Operacion exitosa
 
 <!--Todo: process Response Object and its headers, schema, examples -->
 
-<b>Datos de ejemplo</b>
+<h3 class="field-label">Example data</h3>
 <div class="example-data-content-type">Content-Type: application/json</div>
 <pre class="example"><code>{"empty": false}</code></pre>
-<b>Datos de ejemplo</b>
+<h3 class="field-label">Example data</h3>
 <div class="example-data-content-type">Content-Type: application/xml</div>
 <pre class="example"><code><Usuario>
 <id>123456789</id>
@@ -438,44 +439,46 @@ Operacion exitosa
 </user_permissions>
 </Usuario></code></pre>
 
-<b>Produce</b>
-Esta API produce los siguientes tipos de datos al <span class="header">Accept</span> request header;
+<h3 class="field-label">Produces</h3>
+This API call produces the following media types according to the <span class="header">Accept</span> request header;
 the media type will be conveyed by the <span class="header">Content-Type</span> response header.
 <ul>
 <li><code>application/json</code></li>
 <li><code>application/xml</code></li>
 </ul>
 
-<b>Respuestas</b>
-200
+<h3 class="field-label">Responses</h3>
+<h4 class="field-label">200</h4>
 Operacion exitosa
 <a href="#Usuario">Usuario</a>
-400
+<h4 class="field-label">400</h4>
 Invalid ID supplied
 <a href="#"></a>
-404
+<h4 class="field-label">404</h4>
 Pet not found
 <a href="#"></a>
-</div> <!-- method -->
-<hr/>
-# <a name="Usuarioxperfilxcadena">Usuarioxperfilxcadena</a>
-<div class="method"><a name="usuarioxperfilxcadenaPost"/>
+</div>
+<p><!-- method --></p>
+<hr />
+
+<h1><a name="Usuarioxperfilxdistribuidor">Usuarioxperfilxdistribuidor</a></h1>
+<div class="method"><a name="usuarioxperfilxdistribuidorPost" />
 <div class="method-path">
 <a class="up" href="#__Methods">Up</a>
-<pre class="post"><code class="huge"><span class="http-method">post</span> /usuarioxperfilxcadena</code></pre></div>
-<div class="method-summary">Registra a un usuario en cadena con un rol especifico. (<span class="nickname">usuarioxperfilxcadenaPost</span>)</div>
+<pre class="post"><code class="huge"><span class="http-method">post</span> /usuarioxperfilxdistribuidor</code></pre></div>
+<div class="method-summary">Registra a un usuario en distribuidor con un rol especifico. (<span class="nickname">usuarioxperfilxdistribuidorPost</span>)</div>
 <div class="method-notes"></div>
 
 
-<b>Consumes</b>
+<h3 class="field-label">Consumes</h3>
 This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
 <ul>
 <li><code>application/json</code></li>
 </ul>
 
-<b>Request body</b>
+<h3 class="field-label">Request body</h3>
 <div class="field-items">
-<div class="param">usuarioxperfilxcadena <a href="#UsuarioxPerfilxCadena">UsuarioxPerfilxCadena</a> (optional)</div>
+<div class="param">usuarioxperfilxdistribuidor <a href="#UsuarioxPerfilxDistribuidor">UsuarioxPerfilxDistribuidor</a> (optional)</div>
 
 <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Datos de registro. </div>
 
@@ -489,38 +492,29 @@ This API call consumes the following media types via the <span class="header">Co
 
 
 
-<b>Respuestas</b>
-201
+<h3 class="field-label">Responses</h3>
+<h4 class="field-label">201</h4>
 Created
 <a href="#"></a>
-</div> <!-- method -->
-<hr/>
+</div>
+<p><!-- method --></p>
+<hr />
 
-## <a name="__Models">Models</a>
-[ Jump to <a href="#__Methods">Methods</a> ]
+<h2><a name="__Models">Models</a></h2>
+<p>[ Jump to <a href="#__Methods">Methods</a> ]</p>
 
-<h3>Tabla de contenidos</h3>
+<h3>Table of Contents</h3>
 <ol>
-<li><a href="#ApiResponse"><code>ApiResponse</code> - </a></li>
-<li><a href="#Cadenas"><code>Cadenas</code> - </a></li>
+<li><a href="#Distribuidores"><code>Distribuidores</code> - </a></li>
 <li><a href="#Group"><code>Group</code> - </a></li>
 <li><a href="#Roles"><code>Roles</code> - </a></li>
 <li><a href="#Usuario"><code>Usuario</code> - </a></li>
-<li><a href="#UsuarioxPerfilxCadena"><code>UsuarioxPerfilxCadena</code> - </a></li>
+<li><a href="#UsuarioxPerfilxDistribuidor"><code>UsuarioxPerfilxDistribuidor</code> - </a></li>
 </ol>
 
 <div class="model">
-<h3><a name="ApiResponse"><code>ApiResponse</code> - </a> <a class="up" href="#__Models">Up</a></h3>
-<div class='model-description'></div>
-<div class="field-items">
-<div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
-<div class="param">type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
-<div class="param">message (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
-</div>  <!-- field-items -->
-</div>
-<div class="model">
-<h3><a name="Cadenas"><code>Cadenas</code> - </a> <a class="up" href="#__Models">Up</a></h3>
-<div class='model-description'></div>
+<h3><a name="Distribuidores"><code>Distribuidores</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+<div class="model-description"></div>
 <div class="field-items">
 <div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
 <div class="param">nombre (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
@@ -530,7 +524,7 @@ Created
 </div>
 <div class="model">
 <h3><a name="Group"><code>Group</code> - </a> <a class="up" href="#__Models">Up</a></h3>
-<div class='model-description'></div>
+<div class="model-description"></div>
 <div class="field-items">
 <div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
 <div class="param">name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
@@ -538,7 +532,7 @@ Created
 </div>
 <div class="model">
 <h3><a name="Roles"><code>Roles</code> - </a> <a class="up" href="#__Models">Up</a></h3>
-<div class='model-description'></div>
+<div class="model-description"></div>
 <div class="field-items">
 <div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
 <div class="param">name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
@@ -546,7 +540,7 @@ Created
 </div>
 <div class="model">
 <h3><a name="Usuario"><code>Usuario</code> - </a> <a class="up" href="#__Models">Up</a></h3>
-<div class='model-description'></div>
+<div class="model-description"></div>
 <div class="field-items">
 <div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
 <div class="param">groups_list (optional)</div><div class="param-desc"><span class="param-type"><a href="#Group">array[Group]</a></span>  </div>
@@ -565,12 +559,13 @@ Created
 </div>  <!-- field-items -->
 </div>
 <div class="model">
-<h3><a name="UsuarioxPerfilxCadena"><code>UsuarioxPerfilxCadena</code> - </a> <a class="up" href="#__Models">Up</a></h3>
-<div class='model-description'></div>
+<h3><a name="UsuarioxPerfilxDistribuidor"><code>UsuarioxPerfilxDistribuidor</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+<div class="model-description"></div>
 <div class="field-items">
 <div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
-<div class="param">cadena (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+<div class="param">distribuidor (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
 <div class="param">usuario (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
 <div class="param">perfil (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
 </div>  <!-- field-items -->
 </div>
+:ET

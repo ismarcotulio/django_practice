@@ -1,8 +1,16 @@
 [
   
     {
-      "title"    : "APIs para el registro de usuarios en Cadena",
-      "subtitle" : "Documentacion utilizando Open API Estandar version 2",
+      "title"    : "APIS PARA EL REGISTRO DE USUARIOS EN DISTRIBUIDORES",
+      "subtitle" : "Documentacion utilizando el estandar Open API Specification version 2",
+      "tags"     : "apis, open api specification, backend",
+      "url"      : "/django_practice/2022/07/04/api-distribuidor-usuario/",
+      "date"     : "2022-07-04 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "APIS PARA EL REGISTRO DE USUARIOS EN CADENA",
+      "subtitle" : "Documentacion utilizando el estandar Open API Specification version 2",
       "tags"     : "apis, open api specification, backend",
       "url"      : "/django_practice/2022/07/04/api-cadena-usuario/",
       "date"     : "2022-07-04 00:00:00 -0500"
