@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "APIs para el registro de usuarios en Cadena",
+      "subtitle" : "Documentacion utilizando Open API Estandar version 2",
+      "tags"     : "apis, open api specification, backend",
+      "url"      : "/django_practice/2022/07/04/api-cadena-usuario/",
+      "date"     : "2022-07-04 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "PLANIFICACION - CREACION DE VISTAS Y SERIALIZERS EN BACKEND",
+      "subtitle" : "Division de tareas",
+      "tags"     : "vistas, serializers, backend",
+      "url"      : "/django_practice/2022/06/30/plan-vistas/",
+      "date"     : "2022-06-30 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "PLANIFICACION - CREACION DE MODELOS EN BACKEND",
       "subtitle" : "Division de tareas",
       "tags"     : "modelos, backend",

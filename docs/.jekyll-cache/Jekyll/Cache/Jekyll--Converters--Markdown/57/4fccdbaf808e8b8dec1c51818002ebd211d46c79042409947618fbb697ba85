@@ -1,0 +1,93 @@
+I"?
+<style>
+    .pantalla {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    p{
+        text-align: justify;
+    }
+</style>
+
+<p>El siguiente documento contiene una planificacion como propuesta para agrupar las vistas y serializers correspondientes a cada modelo.</p>
+
+<h2 id="vistas-y-serializers-de-personas">Vistas y Serializers de Personas</h2>
+<ol>
+  <li>Persona.</li>
+  <li>Paciente.</li>
+  <li>Familiar dependiente.</li>
+  <li>Medico</li>
+  <li>Genero.</li>
+  <li>Region.</li>
+  <li>Pais.</li>
+  <li>Parentezco.</li>
+  <li>Especialidad.</li>
+  <li>Modo contacto.</li>
+</ol>
+
+<h2 id="vistas-y-serializers-de-usuarios">Vistas y Serializers de Usuarios</h2>
+<ol>
+  <li>Usuarios.</li>
+  <li>Perfil.</li>
+  <li>Usuario x Perfil x Cadena x POS.</li>
+  <li>Usuario x Perfil x Cadena.</li>
+  <li>Usuario x Perfil x Laboratorio.</li>
+  <li>Usuario x Perfil x Distribuidor.</li>
+</ol>
+
+<h2 id="vistas-y-serializers-de-programas">Vistas y Serializers de Programas</h2>
+<ol>
+  <li>Encabezado Paciente Programa.</li>
+  <li>Detalle Paciente Programa.</li>
+  <li>Receta.</li>
+  <li>Programa Respuesta.</li>
+  <li>Inscripcion respuesta.</li>
+  <li>Programa.</li>
+  <li>Medicamentos.</li>
+  <li>Laboratorio.</li>
+</ol>
+
+<h2 id="vistas-y-serializers-de-canje">Vistas y Serializers de Canje</h2>
+<ol>
+  <li>Punto de venta.</li>
+  <li>Cadena.</li>
+  <li>Detalle Compras</li>
+  <li>Encabezado compras.</li>
+  <li>Detalle Boleta.</li>
+  <li>Encabezado Boleta.</li>
+  <li>Estado Boleta.</li>
+  <li>Detalle Canjes.</li>
+  <li>Encabezado Canjes.</li>
+  <li>Estado Canje.</li>
+  <li>Escala de canjes.</li>
+</ol>
+
+<h2 id="vistas-y-serializers-de-configuracion-y-solicitud-de-reembolso">Vistas y Serializers de Configuracion y Solicitud de reembolso</h2>
+<ol>
+  <li>Detalle Cadena Configuracion Pedido.</li>
+  <li>Encabezado Cadena Configuracion Pedido.</li>
+  <li>Detalle Cadena Pedido Reembolso.</li>
+  <li>Encabezado Cadena Pedido Reembolso.</li>
+  <li>Detalle Distribuidor Configuracion Pedido.</li>
+  <li>Encabezado Distribuidor Configuracion Pedido.</li>
+  <li>Detalle Distribuidor Pedido Reembolso.</li>
+  <li>Encabezado Distribuidor Pedido Reembolso.</li>
+  <li>Estado de Reembolso.</li>
+  <li>Tipo de Solicitud.</li>
+  <li>Tipo de Recurrencia.</li>
+</ol>
+
+<h1 id="vistas-y-serializers-de-configuraciones">Vistas y Serializers de Configuraciones</h1>
+<ol>
+  <li>Configuracion Laboratorio.</li>
+  <li>Configuracion notificaciones.</li>
+  <li>Tipo de notificacion.</li>
+  <li>Tipo de mensaje.</li>
+  <li>Medicamento x Distribuidor.</li>
+  <li>Medicamento x Laboratorio.</li>
+</ol>
+
+:ET
